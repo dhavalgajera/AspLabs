@@ -13,6 +13,11 @@ T:System.Web.Adapters.ISessionManager
 # Buffering
 T:System.Web.Adapters.BufferResponseStreamAttribute
 T:System.Web.Adapters.IBufferResponseStreamMetadata
+T:System.Web.Adapters.SystemWebAdaptersExtensions
+
+# Prebuffering
+T:System.Web.Adapters.IPreBufferRequestStreamMetadata
+T:System.Web.Adapters.PreBufferRequestStreamAttribute
 
 # Internal constructors
 M:System.Web.HttpContext.#ctor(Microsoft.AspNetCore.Http.HttpContext)

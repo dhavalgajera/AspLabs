@@ -18,6 +18,10 @@ namespace System.Web.Adapters
             services.AddHttpContextAccessor();
         }
 
+        public static void UseHttpHandler<T>(this IApplicationBuilder app)
+            where T : IHttpHandler
+            => app.UseMiddleware<HttpHandlerMiddleware<T>>();
+
         public static void UseSystemWebAdapters(this IApplicationBuilder app)
         {
             app.UseMiddleware<PreBufferRequestStreamMiddleware>();
